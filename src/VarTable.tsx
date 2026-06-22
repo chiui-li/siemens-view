@@ -1,5 +1,4 @@
-// import { useState } from 'react'
-import "./App.css";
+import "./VarTable.css";
 import { Button, Space, Table } from "antd";
 import {
   DataTypeConstants,
@@ -13,7 +12,7 @@ import SelectVariableTabelCell from "./components/SelectVariableTabelCell";
 import { validName } from "./utils/validator";
 import useTableData from "./hooks/useTableData";
 
-function App() {
+function VarTable() {
   const { list, updateRow, names, addRow, selected, setSelected, delRow } =
     useTableData();
 
@@ -137,4 +136,4 @@ function App() {
   );
 }
 
-export default App;
+export default VarTable;
