@@ -1,0 +1,12 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-content: center;
+}
+
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
