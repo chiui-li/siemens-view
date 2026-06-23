@@ -8,10 +8,15 @@ export const validBool = (val?: string) => {
 };
 
 export const validInt = (val?: string) => {
-  const reg = /^-?\d+$/;
-  if (typeof val === "string" && reg.test(val)) {
-    const int = parseInt(val);
-    return Number.isInteger(int) && int > -2147483648 && int < 2147483647;
+  // const reg = /^-?\d+$/;
+  if (typeof val === "string") {
+    const int = Number(val);
+    return (
+      Number.isInteger(int) &&
+      String(int) === val &&
+      int > -2147483648 &&
+      int < 2147483647
+    );
   }
   return false;
 };
